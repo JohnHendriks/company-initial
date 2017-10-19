@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 @Component
-@Profile("dev")
+@Profile("cloud")
 public class SampleData implements CommandLineRunner {
 
     private final CompanyRepository repository;

@@ -1,0 +1,13 @@
+---
+applications:
+  -
+    buildpack: java_buildpack
+    instances: 1
+    memory: 1G
+    name: company
+    path: ./build/libs/company.jar
+    random-route: true
+    timeout: 180
+    services:
+      - company-db
+      - config
